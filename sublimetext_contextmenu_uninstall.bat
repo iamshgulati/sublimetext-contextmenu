@@ -1,6 +1,7 @@
 @echo off
 
 rem remove for all file types
+@reg delete "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text" /f
 @reg delete "HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text" /f
 @reg delete "HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text" /f
 @reg delete "HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text\command" /f
